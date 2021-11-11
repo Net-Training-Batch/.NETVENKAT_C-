@@ -1,0 +1,155 @@
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 ~
+$ cd  G:\git_project
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project
+$ git init demo
+Initialized empty Git repository in G:/git_project/demo/.git/
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project
+$ git add hello.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project
+$ git add hello.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project
+$ git add hello.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project
+$ git init
+Initialized empty Git repository in G:/git_project/.git/
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git add hello.txt
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git commit -m "firstcheckin"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'gopalakrishna@LAPTOP-M9HO6410.(none)')
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git config --global user.name "gopalakrishna489"
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git confiig --global user.email "gopalakrishna489@gmail.com"
+git: 'confiig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git config --global user.email "gopalakrishna489@gmail.com"
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git config --global user.name "gopalakrishna489"
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git confiig --global user.email "gopalakrishna489@gmail.com"
+git: 'confiig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git config --global user.email "gopalakrishna489@gmail.com"
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git commit -m "firstcheck"
+[master (root-commit) ad2bc22] firstcheck
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git push master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git push main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git remote add origin  G:/git_project/.git/
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git push master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git push main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$  git push --set-upstream origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git push origin
+Everything up-to-date
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+gopalakrishna@LAPTOP-M9HO6410 MINGW64 /g/git_project (master)
+$ git log
+commit ad2bc22d48c4e480c460f1d72baf6070ed7f53ad (HEAD -> master, origin/master)
+Author: gopalakrishna489 <gopalakrishna489@gmail.com>
+Date:   Wed Oct 27 09:21:02 2021 +0530
+
+    firstcheck
+
+
